@@ -44,7 +44,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 0 5px;
+    padding: 5px 5px;
     font-size: 1.25vw;
     border-bottom: 0.25vw solid #9ECACC;
     margin: 0 10px;
