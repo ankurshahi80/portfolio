@@ -7,6 +7,7 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
     background-color: #EEEEF5;
+    color: #485874
 }
 
 
@@ -17,6 +18,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px 35px 10px 0;
+    align-items: center;
 }
 
 header h1 {
@@ -47,32 +49,23 @@ header nav ul {
 
 header nav ul li a {
     padding: 5px 5px;
-    font-size: 1.25vw;
+    font-size: 1.55vw;
     border-bottom: 0.25vw solid #9ECACC;
     margin: 0 10px;
 }
 /* HEADER/NAVBAR STYLES END */
 
 /* FOOTER STYLES START */
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    padding: 20px 40px;
-    
+footer { 
+    align-items: center;
 }
 
 footer h2 {
     border-right: 4px solid #485874;
     font-size: 45px;
-    /*font-weight: normal;*/
     color: #485874;
     padding-right: 10px;
     text-align: right;
-    width: 20%;
-}
-footer nav {
-    margin: auto;
 }
 
 footer nav ul {
@@ -80,6 +73,7 @@ footer nav ul {
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
+    
 }
 
 footer nav ul li a {
@@ -87,8 +81,108 @@ footer nav ul li a {
     margin: 0 20px;
     text-decoration: none;
     color: #485874;
-    font-size: 20px;
+    font-size: 1.55vw;
     border-bottom: 0.25vw solid #485874;
 }
-
 /* FOOTER STYLES END */
+
+/* HERO STYLES START */
+.hero {
+    background-image: url('../images/jason-dent-UNDqO_CL30s-unsplash.jpg');
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.profile-picture img {
+    width: 300px;
+}
+.hero-sub-title {
+    background-color: #9ECACC;
+    padding: 10px;
+    width: 350px;
+    color: #31333a;
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+    font-size: 24px;
+  }
+/* HERO STYLES END */
+
+/* SECTION STYLE START*/
+.section-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 20px 40px;
+}
+
+.section-title {
+    flex: 1 20%;
+    border-right: 4px solid #485874;
+    font-size: 45px;
+    color: #485874;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.content {
+    flex: 2 80%;
+    /*margin: 0 auto;*/
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* END SECTION STYLE*/
+
+.abt-me p {
+    line-height: 1.5;
+}
+
+/* WORK TILE STYLE START */
+
+.samples, .contacts {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.primary-sample {
+    margin:0 30px;
+    position:relative;
+}
+.primary-sample img {
+    width: 100%;
+    flex: 1 0 100%;
+    border:5px solid #9ECACC;
+}
+
+.sample {
+    margin:10px 30px 0;
+    position:relative;
+}
+.sample img {
+    width: 100%;
+    flex: 1 0 100%;
+    border:5px solid #9ECACC;
+}
+
+.sample-details {
+    background-color: #9ECACC;
+    display: inline-block;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    padding: 20px;
+    color: #31333A;
+}
+
+.sample-details h3 {
+    font-size: 24px;
+    padding: 2px 0;
+}
+/* END WORK TILE STYLE */
+
