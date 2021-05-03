@@ -150,6 +150,9 @@ footer nav ul li a {
     justify-content: space-around;
 }
 
+.samples {
+    justify-content: flex-start; 
+}
 .primary-sample {
     margin:0 30px;
     position:relative;
@@ -163,6 +166,7 @@ footer nav ul li a {
 .sample {
     margin:10px 30px 0;
     position:relative;
+
 }
 .sample img {
     width: 100%;
@@ -186,3 +190,95 @@ footer nav ul li a {
 }
 /* END WORK TILE STYLE */
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      justify-content: center;
+      position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        background-color:#31333a;
+    }
+
+    header h1 a {
+        color: #9ECACC;
+    }
+    header nav ul li a {
+        font-size: 20px;
+      }
+    
+    footer {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    footer nav ul li a {
+        margin: 0 5px;
+    }
+    .section-title {
+        font-size: 24px;
+    }
+    .sample {
+        flex: 80%;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+    .section-title {
+        flex:100%;
+        margin:0 35px 20px 35px;
+        text-align: center;
+        border-right: 0;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #31333a;
+    }
+    .hero-sub-title {
+        font-size: 14px;
+        right: 20px;
+        width:250px;
+
+    }
+
+    .samples {
+        flex: 100%;
+    }
+    
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header nav ul li a {
+        padding: 5px 5px;
+        border-bottom: 0;
+        margin: 5px 10px;
+    }
+    .sample-details {
+    background-color: #9ECACC;
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    padding: 10px;
+    color: #31333A;
+}
+
+.sample-details h3 {
+    font-size: 12px;
+    padding: 1px 0;
+}
+
+.sample-details p {
+    font-size: 10px;
+}
+}
